@@ -65,8 +65,31 @@ textarea {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+.site-logo {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .site-nav {
@@ -490,5 +513,23 @@ textarea {
   .payment-card,
   .step-card {
     padding: 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-logo {
+    height: 96px;
+  }
+  .footer-logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-logo {
+    height: 64px;
+  }
+  .footer-logo {
+    height: 32px;
   }
 }
